@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexusTech - Future Driven Technology</title>
+    <title>Miola Technologies</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* Marquee animation */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
         /* Custom styles */
         @media (max-width: 640px) {
             .hero-bg {
@@ -68,7 +74,7 @@
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
                     <a href="#" class="text-2xl font-bold text-gray-800">
-                        <span class="text-blue-600">Nexus</span><span>Tech</span>
+                        <span class="text-blue-600">Miola Technologies</span>
                     </a>
                 </div>
                 
@@ -136,21 +142,33 @@
                 <h2 class="text-2xl font-semibold text-gray-700 mb-2">Trusted by industry leaders</h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center">
-                <div class="flex justify-center">
-                    <img src="https://via.placeholder.com/150x60?text=TechCorp" alt="TechCorp" class="h-12 opacity-70 hover:opacity-100 transition">
-                </div>
-                <div class="flex justify-center">
-                    <img src="https://via.placeholder.com/150x60?text=Innova" alt="Innova" class="h-12 opacity-70 hover:opacity-100 transition">
-                </div>
-                <div class="flex justify-center">
-                    <img src="https://via.placeholder.com/150x60?text=FutureLabs" alt="FutureLabs" class="h-12 opacity-70 hover:opacity-100 transition">
-                </div>
-                <div class="flex justify-center">
-                    <img src="https://via.placeholder.com/150x60?text=DigitalX" alt="DigitalX" class="h-14 opacity-70 hover:opacity-100 transition">
-                </div>
-                <div class="flex justify-center col-span-2 md:col-span-1">
-                    <img src="https://via.placeholder.com/150x60?text=CloudNine" alt="CloudNine" class="h-12 opacity-70 hover:opacity-100 transition">
+            <div class="marquee-container overflow-hidden whitespace-nowrap">
+                <div class="marquee-content inline-flex items-center space-x-20 px-4" style="animation: scroll 30s linear infinite;">
+                    <div class="flex justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/TechCrunch_logo.svg/2560px-TechCrunch_logo.svg.png" alt="TechCorp" class="h-12 opacity-70 hover:opacity-100 transition">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Logo_of_Innova.svg/1200px-Logo_of_Innova.svg.png" alt="Innova" class="h-12 opacity-70 hover:opacity-100 transition">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/FutureLabs_Logo.svg/1200px-FutureLabs_Logo.svg.png" alt="FutureLabs" class="h-12 opacity-70 hover:opacity-100 transition">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/DigitalX_logo.svg/1200px-DigitalX_logo.svg.png" alt="DigitalX" class="h-14 opacity-70 hover:opacity-100 transition">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/CloudNine_Logo.svg/1200px-CloudNine_Logo.svg.png" alt="CloudNine" class="h-12 opacity-70 hover:opacity-100 transition">
+                    </div>
+                    <!-- Duplicate items to create seamless loop -->
+                    <div class="flex justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/TechCrunch_logo.svg/2560px-TechCrunch_logo.svg.png" alt="TechCorp" class="h-12 opacity-70 hover:opacity-100 transition">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Logo_of_Innova.svg/1200px-Logo_of_Innova.svg.png" alt="Innova" class="h-12 opacity-70 hover:opacity-100 transition">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/FutureLabs_Logo.svg/1200px-FutureLabs_Logo.svg.png" alt="FutureLabs" class="h-12 opacity-70 hover:opacity-100 transition">
+                    </div>
                 </div>
             </div>
         </div>
@@ -163,12 +181,12 @@
                     </div>
                 </div>
                 <p class="mb-5 italic opacity-90 text-sm">
-                    "NexusTech transformed our digital infrastructure with their cloud solutions."
+                    "MIOLA technologies transformed our digital infrastructure with their cloud solutions."
                 </p>
                 <div class="flex items-center">
                     <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson" class="w-10 h-10 rounded-full mr-3">
                     <div>
-                        <h4 class="font-semibold text-sm">Sarah Johnson</h4>
+                        <h4 class="font-semibold text-sm">awaiye</h4>
                         <p class="text-xs opacity-75">CTO, TechCorp</p>
                     </div>
                 </div>
@@ -246,7 +264,7 @@
                 <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Who We Are</h2>
                     <p class="text-gray-600 mb-6 text-lg">
-                        Founded in 2012, NexusTech has been at the forefront of technological innovation, helping businesses across the globe solve complex challenges with simple, elegant solutions.
+                        Founded in 2012, MiolaTech has been at the forefront of technological innovation, helping businesses across the globe solve complex challenges with simple, elegant solutions.
                     </p>
                     <p class="text-gray-600 mb-8 text-lg">
                         Our team of 150+ engineers, designers, and visionaries work tirelessly to push the boundaries of what's possible, delivering results that exceed expectations.
@@ -274,9 +292,9 @@
                     </div>
                 </div>
                 
-                <div class="lg:w-1/2 relative">
+                <div class="lg:w-1/2">
                     <!-- Image Gallery -->
-                    <div class="relative h-96 w-full rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-72 w-full rounded-xl overflow-hidden shadow-lg mb-8">
                         <div id="image-slider" class="h-full w-full relative">
                             <img src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
                                  alt="Our Team" 
@@ -301,7 +319,7 @@
                     </div>
                     
                     <!-- Stats Cards -->
-                    <div class="flex justify-between -mt-8 px-4">
+                    <div class="flex justify-between px-4 mt-4">
                         <div class="bg-white p-4 rounded-lg shadow-lg text-center w-1/3 mx-2">
                             <div class="text-3xl font-bold text-blue-600 mb-1">150+</div>
                             <div class="text-gray-600 text-sm">Experts</div>
@@ -347,12 +365,12 @@
                                     </div>
                                 </div>
                                 <p class="mb-6 italic opacity-90">
-                                    "NexusTech transformed our digital infrastructure with their cloud solutions, resulting in 40% cost savings and improved performance across all our applications."
+                                    "miola tech transformed our digital infrastructure with their cloud solutions, resulting in 40% cost savings and improved performance across all our applications."
                                 </p>
                                 <div class="flex items-center">
-                                    <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson" class="w-12 h-12 rounded-full mr-4">
+                                    <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="awaiye" class="w-12 h-12 rounded-full mr-4">
                                     <div>
-                                        <h4 class="font-semibold">Sarah Johnson</h4>
+                                        <h4 class="font-semibold">awaiye</h4>
                                         <p class="text-sm opacity-75">CTO, TechCorp</p>
                                     </div>
                                 </div>
@@ -372,7 +390,7 @@
                                     </div>
                                 </div>
                                 <p class="mb-6 italic opacity-90">
-                                    "The AI implementation by NexusTech has given us unprecedented insights into our customer behavior, leading to a 30% increase in conversion rates."
+                                    "The AI implementation by MiolaTech has given us unprecedented insights into our customer behavior, leading to a 30% increase in conversion rates."
                                 </p>
                                 <div class="flex items-center">
                                     <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="w-12 h-12 rounded-full mr-4">
@@ -397,7 +415,7 @@
                                     </div>
                                 </div>
                                 <p class="mb-6 italic opacity-90">
-                                    "Their cybersecurity team helped us identify and mitigate vulnerabilities we didn't even know existed. Now we sleep better at night knowing our data is secure."
+                                    "The IoT solution provided by MiolaTech has revolutionized our manufacturing process, reducing downtime by 60%."
                                 </p>
                                 <div class="flex items-center">
                                     <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Priya Patel" class="w-12 h-12 rounded-full mr-4">
@@ -422,7 +440,7 @@
                                     </div>
                                 </div>
                                 <p class="mb-6 italic opacity-90">
-                                    "The IoT solution provided by NexusTech has revolutionized our manufacturing process, reducing downtime by 60%."
+                                    "We've seen a 45% improvement in our logistics operations thanks to MiolaTech's predictive analytics platform."
                                 </p>
                                 <div class="flex items-center">
                                     <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="James Wilson" class="w-12 h-12 rounded-full mr-4">
@@ -447,7 +465,7 @@
                                     </div>
                                 </div>
                                 <p class="mb-6 italic opacity-90">
-                                    "We've seen a 45% improvement in our logistics operations thanks to NexusTech's predictive analytics platform."
+                                    "Their cybersecurity team helped us identify and mitigate vulnerabilities we didn't even know existed. Now we sleep better at night knowing our data is secure."
                                 </p>
                                 <div class="flex items-center">
                                     <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Emma Rodriguez" class="w-12 h-12 rounded-full mr-4">
@@ -503,7 +521,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-medium text-gray-800">Our Headquarters</h4>
-                                    <p class="text-gray-600">123 Tech Avenue, Silicon Valley, CA 94000</p>
+                                    <p class="text-gray-600">NO 27 Harmony Estate powerline Magboro</p>
                                 </div>
                             </div>
                             
@@ -513,7 +531,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-medium text-gray-800">Email Us</h4>
-                                    <p class="text-gray-600">info@nexustech.com<br>sales@nexustech.com</p>
+                                    <p class="text-gray-600">info@miolatech.com<br>sales@miolatech.com</p>
                                 </div>
                             </div>
                             
@@ -523,7 +541,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-medium text-gray-800">Call Us</h4>
-                                    <p class="text-gray-600">+1 (555) 123-4567<br>Mon-Fri, 9am-5pm PST</p>
+                                    <p class="text-gray-600">+234 (080)85277188<br>Mon-Fri, 9am-5pm Eat</p>
                                 </div>
                             </div>
                         </div>
@@ -590,7 +608,7 @@
             <div class="flex flex-col md:flex-row justify-between">
                 <div class="mb-8 md:mb-0 md:w-1/4">
                     <h3 class="text-2xl font-bold mb-4">
-                        <span class="text-blue-400">Nexus</span><span>Tech</span>
+                        <span class="text-blue-400">Miola</span><span>Tech</span>
                     </h3>
                     <p class="text-gray-400 mb-4">
                         Pioneering technology solutions for the digital age.
@@ -649,7 +667,7 @@
             
             <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-400 text-sm mb-4 md:mb-0">
-                    &copy; 2023 NexusTech. All rights reserved.
+                    &copy; 2023 Miolatech. All rights reserved.
                 </p>
                 <div class="flex space-x-6">
                     <a href="#" class="text-gray-400 hover:text-white text-sm transition">Privacy Policy</a>
